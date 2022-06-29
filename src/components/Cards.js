@@ -24,7 +24,7 @@ function Cards(){
     const [prev, setPrev] = useState(-1)
 
     function check(current){
-        if(items[current].id == items[prev].id){
+        if(items[current].id === items[prev].id){
             items[current].stat = "correct"
             items[prev].stat = "correct"
             setItems([...items])
